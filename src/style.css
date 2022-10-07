@@ -17,6 +17,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 img,
 svg {
   display: block;
@@ -68,6 +73,7 @@ button {
   text-align: center;
   flex: 0 1 136px;
   padding: 9px 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .navbar-item:hover {
@@ -75,7 +81,6 @@ button {
 }
 
 .navbar-link {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -99,13 +104,17 @@ align-items: flex-end;
   font-size: 17px;
   line-height: 20px;
   color: #ffffff;
-  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-phone:hover {
+  color: #3596F5;
 }
 
 .main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 54px 0 99px;
+  padding: 54px 0 96px;
   display: flex;
   gap: 30px;
 }
@@ -148,6 +157,7 @@ path.current-floor {
 }
 .counter-button {
   color: #3596F5;
+  transition: color 0.3s ease-in-out;
 }
 
 .counter-button:hover {
@@ -168,9 +178,79 @@ path.current-floor {
   background-color: #3596F5;
   padding: 16px 36px;
   border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button-primary:hover {
   background-color: #2975c1;
 }
+
+
+.footer {
+  background-color: #D7D7D7;
+  border-top: 4px solid #3596F5;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 56px;
+}
+
+.footer-img {
+  margin-right: 37px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 59px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #635854;
+}
+
+.footer-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #635854;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #635854;
+}
+
+.footer-social svg {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-docs {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  color: #635854;
+  transition: color 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.footer-phone:hover,
+.footer-social svg:hover,
+.footer-link:hover {
+  color: #3596F5;
+}
+
 
