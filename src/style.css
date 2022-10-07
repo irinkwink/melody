@@ -22,6 +22,14 @@ svg {
   display: block;
 }
 
+button {
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
 .header {
   background-color: #635854;
   border-bottom: 4px solid #3596F5;
@@ -60,6 +68,10 @@ svg {
   text-align: center;
   flex: 0 1 136px;
   padding: 9px 16px;
+}
+
+.navbar-item:hover {
+  background-color: #3596F5;
 }
 
 .navbar-link {
@@ -107,6 +119,10 @@ align-items: flex-end;
   opacity: 1;
 }
 
+path.current-floor {
+  opacity: 1;
+}
+
 .main-info {
   flex-grow: 1;
   display: flex;
@@ -132,9 +148,6 @@ align-items: flex-end;
 }
 .counter-button {
   color: #3596F5;
-  background-color: transparent;
-  border: none;
-  padding: 0;
 }
 
 .counter-button:hover {
@@ -154,7 +167,6 @@ align-items: flex-end;
   color: #ffffff;
   background-color: #3596F5;
   padding: 16px 36px;
-  border: none;
   border-radius: 6px;
 }
 
